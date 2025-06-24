@@ -39,7 +39,7 @@ Ensure the following tools are installed and in your `$PATH`:
 * [`waybackurls`](https://github.com/tomnomnom/waybackurls)
 * [`gau`](https://github.com/lc/gau)
 * [`katana`](https://github.com/projectdiscovery/katana)
-* [`gf`](https://github.com/tomnomnom/gf) + patterns for `xss`, `sqli`, `lfi`
+* [`gf`](https://github.com/tomnomnom/gf) + patterns for `xss`, `sqli`, `lfi`, `redirect`
 * [`nuclei`](https://github.com/projectdiscovery/nuclei)
 
 > ⚠️ Make sure your Nuclei templates are updated!
@@ -70,13 +70,13 @@ Each run generates a structured directory with:
 ## ⚙️ Usage
 
 ```bash
-python3 recon.py -d <target-domain> -t <path-to-nuclei-templates> [-o output-dir]
+python3 Recon_Ninja.py -d <target-domain> -t <path-to-nuclei-templates> [-o output-dir]
 ```
 
 ### Example
 
 ```bash
-python3 recon.py -d example.com -t ~/nuclei-templates -o results
+python3 Recon_Ninja.py -d example.com -t ~/nuclei-templates -o results
 ```
 
 ---
